@@ -1,0 +1,64 @@
+.left-container {
+    padding-left: calc((100vw - 1160px) / 2);
+}
+
+.information {
+    width: 50%;
+    height: 100%;
+    padding: 122px 0px 120px 0px;
+}
+
+.information .left-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.speqtakli{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.afisha {
+    width: 20%;
+    height: 20%;
+}
+
+.afisha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+
+.container-images{
+    padding-top: 60px;
+}
+
+.images-item{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.images-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.video{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+
+

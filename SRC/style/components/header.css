@@ -1,0 +1,153 @@
+header {
+    width: 100%;
+    padding: 28px 0px;
+    position: fixed;
+    z-index: 99;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    position: relative;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+header nav ul li a {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Old Standard TT';
+    cursor: pointer;
+}
+
+.salut-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 45px;
+    font-family: 'Old Standard TT';
+    color: white;
+    font-style: italic;
+    width: 5%;
+    height: 5%;
+}
+
+.salut-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background-color: rgb(24, 22, 22, 1);
+}
+
+header.sticky ul li a{
+    color: white;
+}
+
+
+
+.sub-menu{
+    display: none;
+}
+
+header nav ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -5px;
+    z-index: 1;
+    top: 120%;
+}
+
+header nav ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+header nav ul li:hover .sub-menu ul li{
+    width: 150px;
+}
+
+header nav ul li:hover .sub-menu ul li a{
+    cursor: pointer;
+}
+
+header nav ul li:hover .sub-menu ul li:last-child{
+    margin-top: 10px;
+}
+
+header.sticky .sub-menu{
+    background-color: rgb(24, 22, 22, 1);
+    width: 120px;
+}
+
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width:1260px)
+{
+    .toggle{
+        display: block;
+    }
+
+    header nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(24, 22, 22, 1);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        display: block; 
+        transition: all .5s;
+    }
+    header nav ul li{
+        margin-top: 30px;
+    }
+
+    header nav ul li a{
+       font-size: 40px;
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+
+    header.sticky{
+        padding: 5px 30px;
+    }
+
+    .salut-logo{
+       padding-left: 10px;
+    }
+
+}
+
+@media (max-width:870px){
+    .salut-logo{
+        width: 6%;
+        height: 6%;
+        font-size: 35px;
+    }
+}
+
