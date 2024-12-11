@@ -5,7 +5,7 @@
 .information {
     width: 50%;
     height: 100%;
-    padding: 122px 0px 120px 0px;
+    padding: 122px 15px 120px 0px;
 }
 
 .information .left-container {
@@ -13,6 +13,10 @@
     flex-direction: column;
     height: 100%;
 }
+
+.information .left-container p{
+    padding-top: 20px;
+} 
 
 section.speqtakli{
     display: flex;

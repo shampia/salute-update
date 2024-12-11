@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/general.css">
+    <link rel="stylesheet" href="/src/style/components/header.css">
+    <link rel="stylesheet" href="./style/components/arqivi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/components/footer.css">
+    <link rel="icon" href="/src/img/Drama-icon.png">
+    <title>arqivi</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="salut-logo">
+               <img src="./img/home/salute logo.jpg" > Salute
+            </a>
+
+            <nav>
+                <div class="toggle" id="icone">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="header-menu">
+                    <li>
+                        <a href="index.html">
+                            მთავარი
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#აფიშა">
+                            აფიშა
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./repertuari.html">
+                            რეპერტუარი
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#ბილეთები">
+                            ბილეთები
+                         </a>
+                    </li>
+
+                    <li>
+                        <a href="./arqivi.html">
+                           არქივი
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#პერსონალი">
+                            პერსონალი
+                            <i class="fa-sharp fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                        </a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a>რეჟისორი</a></li>
+                                    <li><a href="./dasi.html">დასი</a></li>
+                                </ul>
+                            </div>
+                        
+                    </li>
+
+                    <li target="contact">
+                        <a href="#კონტაქტი">
+                            კონტაქტი
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100057460209760">
+                            <i class="fa-brands fa-facebook fa-xl"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/theatre_salute/">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                    </li>
+
+                    
+                    <li >
+                        <a>
+                           GE / EN
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="arqivi">
+        <div class="container">
+            <div class="arqivi-itemes">
+               <div class="festivali">
+                    <div class="festivalebi-back">
+                        <a href=""><img src="./img/festivali.jpg" alt=""></a>
+                    </div>
+               </div>
+              
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <div class="footer-info">
+            <p><i class="fa-solid fa-envelope"></i> theatre.salute@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> (+995) 592 780 710</p>
+            <p><i class="fa-solid fa-phone"></i> (+995) 593 934 221</p>
+        </div>
+        <p>Copyright © Your Website 2023</p>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $('#icone').click(function(){
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
+</html>
